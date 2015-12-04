@@ -15,11 +15,11 @@ int main(int argc, char* argv[])
    // Calls insert 20 times then find 480 times per iteration so that insertion runtime doesn't mix with find
    // Saves a number first for which all find calls will be conducted
    // Will see how the runtime changes as this number as size grows
-   for(int i = 1; i <= n ; i+=5){
-      for (int j = i; j <= i+5; j++)
+   for(int i = 1; i <= n ; i+=2){
+      for (int j = i; j <= i+2; j++)
       	 cout << "I " << i << endl;
 
-      for (int k = 1; k <= 495; k++)
+      for (int k = 1; k <= 498; k++)
 	 cout << "F " << 1 << endl; 
    }
    return 0;
