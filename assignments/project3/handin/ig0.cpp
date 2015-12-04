@@ -13,7 +13,7 @@
         int n = (atoi(argv[1])); // This does stuff
 	
 	for(int i = 1; i < n; i++) {
-	    cout << "I " << i << endl;
+	    cout << "I " << rand()%n << endl;
 	}
         return 0;
     }
