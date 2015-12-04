@@ -1,0 +1,88 @@
+Student Name #1: Anthony Chui
+Student ugrad login #1: w9x9a
+
+Student Name #2: Adam Yin 
+Student ugrad login #2: i2z8
+
+Team name (for fun!): TODO:
+
+Acknowledgment that you understand and have followed the course's
+collaboration policy
+(http://www.ugrad.cs.ubc.ca/~cs221/current/syllabus.shtml#conduct):
+
+TODO: Anthony Chui, Adam Yin 
+
+TODO: submit using: make handin-proj2
+
+----------------------------------------------------------------------
+
+Approximate hours on project: 10-15 hours
+
+----------------------------------------------------------------------
+
+For teams, rough breakdown of work: We each worked on it separately until we encountered problems
+in the Fixed and Resizable Hash Dicts, where we then worked together to understood the problems in-depth and compared
+our takes on the problems. 
+
+----------------------------------------------------------------------
+
+Acknowledgment of assistance: TODO:
+
+----------------------------------------------------------------------
+
+Questions:
+
+For the explanations, generally a sentence or two should be enough.
+Type your answers directly in this file.
+
+
+1.  Edit solve.cpp to use the 3x3 Slider Puzzle and the LinkedListDict
+for seenStates.  Comment out the usleep call and cout statements.
+What is the runtime when you use StdStack for activeStates?
+When you use StdQueue for activeStates?  (These will take several minutes.)
+Notice that these are MUCH faster than in Project 1, because I have
+improved LinkedListDict, but your code will make things run even faster!
+
+The runtime for StdStack takes about 10 minutes while StdQueue takes 42 minutes
+according to user time reported by Unix.
+
+
+2.  Now, change the code to use FixedChainHashDict with size 1000.
+What are the runtimes, and how many steps long was the solution found,
+using StdStack and StdQueue?
+You can now see the trade-off of DFS vs. BFS.
+And you should see the huge gain of hashing.
+
+The runtime for StdStack now takes about 10 seconds and finds a solution in 48431 steps, while
+the runtime for StdQueue now takes about 42 seconds and finds a solution in 31 steps. 
+
+3.  Repeat Q2 with ResizeChainHashDict.  (What are runtimes and steps, etc.?)
+What is the average number of
+collision chain nodes examined per call to find?
+
+The runtime for StdStack now takes about 1.060 seconds and finds a solution in 48431 steps and
+1.22 chain nodes are examined for a call to find at the final ResizeChainHashDict (since I took
+the weighed average of the final probe stats).  The runtime for StdQueue now takes about 2.107 seconds
+and finds a solution in 31 steps and 1.21 chain nodes are examined on average using the same methodology as mentioned. 
+
+4.  Now, edit solve.cpp to go back to using LinkedListDict, but switch
+to HeapPriorityQueue.  Try running the program with the usleep and
+cout commands enabled.  Do you see what BestFS is doing?  (Either yes or
+no is fine, but it's fun to try to see what's happening.)  Then,
+comment out the usleep and cout statements and time this.  How long
+did it take?  You should really see the advantage of BestFS!
+
+I see what BestFS is doing. The runtime is now 0.008 seconds. 
+
+5.  With your new data structures, the 3x3 slider puzzle has become
+too easy!  You can try the 4x4 slider puzzle if you'd like, but then
+switch to the 5x5 slider puzzle.  Make sure you are using HeapPriorityQueue.
+How long does this take if you use LinkedListDict?  FixedChainHashDict
+with size 1000?  ResizeChainHashDict?  Are you impressed?
+
+The LinkedListDict takes about 26.5 seconds, and the FixedChainHashDict takes 1.017 seconds,
+while the ResizeChainHashDict takes 0.786 seconds. Indeed, I am impressed. 
+----------------------------------------------------------------------
+
+We will be checking your implementations of HeapPriorityQueue,
+FixedChainHashDict, and ResizeChainHashDict.

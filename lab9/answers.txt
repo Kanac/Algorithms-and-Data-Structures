@@ -1,0 +1,9 @@
+#3. Since lg(1100) = 9.x, that means the cutoff is height <= 9 since height is an integer 
+
+#4. Most common word is "the"
+
+#5. sequential for king_james_bible.txt is faster when the cutoff is at height < 3.
+    parallel is faster after height < 4.
+    
+    sequential is faster at height < 4 a_few_google_5_grams.txt
+    with height < 5, parallel is faster than sequential.

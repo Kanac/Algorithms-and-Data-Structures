@@ -1,0 +1,58 @@
+Student Name #1: TODO: 
+Student ugrad login #1: TODO: 
+
+Student Name #2: TODO: 
+Student ugrad login #2: TODO: 
+
+TODO: Acknowledgment that you understand and have followed the course's collaboration policy
+(http://www.ugrad.cs.ubc.ca/~cs221/current/syllabus.shtml#conduct):
+
+TODO: [[Put your names here again as signature]]
+
+TODO: submit using: make handin-milestone1
+(Run that from one of the UBC ugrad computers, after you have transfered
+your files there and tested to make sure they work correctly on our systems.)
+
+----------------------------------------------------------------------
+
+Questions:
+
+For the explanations, generally a sentence or two should be enough.
+Type your answers directly in this file.
+
+0.  Compile the program (using make).  What puzzle does it solve?
+
+TODO:
+
+1.  Edit solve.cpp to solve the MazeRunner problem, and set the code
+to declare activeStates as ArrayStack or LinkedListStack.  (You should
+only comment out one line and uncomment one line to do that.)
+Do you see why it's called depth-first search (DFS)?
+(If not, you can increase the delay in the usleep call to slow down
+the animation.)
+How many steps long was the solution it found?
+Does it make a difference whether you use ArrayStack or LinkedListStack?
+
+TODO:
+
+2.  Edit solve.cpp to solve the empty Sudoku board.
+What solution do you get?
+
+TODO:
+
+3.  Next, edit solve.cpp to switch to peg solitaire game (the class
+is called Marble).  Run it to completion with the usleep delay set to 10000.
+How long does that take on your computer?  Now, comment out the
+usleep command as well as the two lines before it.  Now how long does it
+take to solve?  (This is why we'll comment these out when we solve
+harder puzzles.)
+
+TODO:
+
+4.  Edit solve.cpp to switch to the 3x3 slider puzzle.  Make sure
+the usleep and print statements in solvePuzzle are still commented out.
+Try solving the 3x3 slider puzzle.  What happens?  Why?
+
+TODO:
+
+----------------------------------------------------------------------

@@ -1,0 +1,17 @@
+
+#2. For NN = 1000 and 100 repetitions, the average number of comparisons is around 11018. (~10x NN)
+    For NN = 100 and 100 repetitionns, the average number of comparisons is around 649. (~6x NN)
+    For NN = 10000 and 100 repetitions, the average number of comparisons is around 155783. (~15x NN)
+
+
+#4. C(0) = 0,
+    C(n) = (1/n)(sum from m = 1 to n of ( (n-1) + C(m-1) + C(n-m) ) )
+
+5.  Avg case - n log n
+    Worse case - n^2
+
+Usually unlikely to see the worse case in practice because the worse case would be picking a value completely away from the 
+median. 
+The implementation is not a stable sort because if we pick one of the repeats as a pivot, it may get swapped 
+The implementation is not in-place because each recursive call creates a new stack in memory for the data structures used. 
+
