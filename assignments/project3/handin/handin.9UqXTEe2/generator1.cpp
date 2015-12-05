@@ -11,14 +11,15 @@ int main(int argc, char* argv[])
    }
 
    int n = atoi(argv[1]);
+   // n is the number of 500 computations done
    // Generator to check insertion and search asymptomtic runtime
-   // Calls insert 20 times then find 480 times per iteration so that insertion runtime doesn't mix with find
-   for(int i = 1; i <= n ; i+=10){
-      for (int j = i; j <= i+10; j++)
-      	 cout << "I " << i << endl;
+   for(int i = 0; i < n ; i++){
+      int j;
+      for (j = 500*(i)+1; j <= 500*(i+1); j++)
+	 cout << "I " << j << endl;
 
-      for (int k = 1; k <= 490; k++)
-	 cout << "F " << rand()%i << endl; 
+      for (int k = 1; k <= 500; k++)
+	 cout << "F " << rand()%j << endl; 
    }
    return 0;
 

@@ -7,8 +7,8 @@ Ugrad ID #2: i2z8
 sl,mys01
 bstT,mys02
 mtf,mys03
-hch,mys04
+spT,mys04
 hqp,mys05
-spt,mys06
-avlT,mys07
+avlT,mys06
+hch,mys07
 
